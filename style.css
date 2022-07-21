@@ -68,7 +68,7 @@ aside{
 .Transfer-page{
     border: 2px solid gray;
     border-radius: 10px;
-    width: 310px;
+    width:310px;
 }
 .inline{
     display: inline;
@@ -110,5 +110,14 @@ span{
 small{
     display: flex;
     padding: 10px;
-    
+}
+@media screen and(min-width: 577px) and (max-width:992px){
+    .image-icon{
+        grid-template-columns: repeat(2,1fr);
+    }   
+}
+@media screen and(min-width: 576px){
+    .image-icon{
+        grid-template-columns: repeat(1,1fr);
+    }  
 }
